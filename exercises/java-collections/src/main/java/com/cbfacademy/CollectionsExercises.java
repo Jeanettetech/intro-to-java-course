@@ -13,7 +13,18 @@ public class CollectionsExercises {
         // - invoke the method element() on the list and print the result on the screen
         // - return the list
         // throw new RuntimeException("Not implemented");
-        return (something);
+        LinkedList<Integer> integer = new LinkedList<>();
+        integer.addFirst(4);
+        integer.add(5);
+        integer.add(6);
+        integer.add(8);
+        integer.add(2);
+        integer.add(9);
+        integer.addLast(2);
+        integer.add(2, 4);
+        System.out.println(integer.element());
+
+        return integer;
     }
 
     public Stack<Integer> useStack() {
@@ -25,6 +36,16 @@ public class CollectionsExercises {
         // - invoke the push(4) method on the stack
         // - return the stack
         // throw new RuntimeException("Not implemented");
+        Stack<Integer> stack = new Stack<>();
+        stack.add(5);
+        stack.add(6);
+        stack.add(8);
+        stack.add(9);
+        System.out.print(stack.getFirst());
+        System.out.print(stack.getLast());
+        System.out.print(stack.pop());
+        stack.push(4);
+        return stack;
     }
 
     public ArrayDeque<Integer> useArrayDeque() {
@@ -36,9 +57,21 @@ public class CollectionsExercises {
         // - invoke the element() method on the queue and print the result on the screen
         // - return the queue
         // throw new RuntimeException("Not implemented");
+        // Stack<Integer> stack = new Stack<>();
+        ArrayDeque<Integer> deque = new ArrayDeque<>();
+        deque.add(5);
+        deque.add(6);
+        deque.add(8);
+        deque.add(9);
+        System.out.print(deque.getFirst());
+        System.out.print(deque.getLast());
+        System.out.print(deque.poll());
+        System.out.print(deque.element());
+        return deque;
     }
 
     public HashMap<Integer, String> useHashMap() {
+
         // TODO: create an empty hash map
         // - add {1, TypeScript} entry to the map
         // - add {2, Kotlin} entry to the map
@@ -52,6 +85,17 @@ public class CollectionsExercises {
         // result on the screen
         // - return the map
         // throw new RuntimeException("Not implemented");
+        HashMap<Integer, String> map = new HashMap<>();
+        map.put(1, "TypeScript");
+        map.put(2, "Kotlin");
+        map.put(3, "Python");
+        map.put(4, "Java");
+        map.put(5, "JavaScript");
+        map.put(6, "Rust");
+        System.out.print(map.keySet());
+        System.out.print(map.values());
+        System.out.print(map.containsValue("English"));
+        return map;
     }
 
     public String getName() {

@@ -10,7 +10,7 @@ The goal of these programming exercises is to practise:
 
 For this assignment, we've provided the starter project above.
 
-## :pushpin: Sorting
+## :pushpin : Sorting
 
 ### Quick Sort
 
@@ -70,7 +70,7 @@ In your terminal, ensure that you are in the `algorithms` folder.
 Then run the following command in your terminal.
 
 ```shell
-./mvnw --projects sort clean test
+
 ```
 
 If you are on Windows, run this command instead:
