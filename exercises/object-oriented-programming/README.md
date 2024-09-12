@@ -120,7 +120,7 @@ Edit `object-oriented-programming/accounts/pom.xml` to uncomment the `<testExclu
 In your terminal, run the following command:
 
 ```shell
-./mvnw --projects accounts clean test -Dtest=AccountTest
+
 ```
 
 Your implementation is correct when all tests pass.

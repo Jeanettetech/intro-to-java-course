@@ -2,9 +2,9 @@ package com.cbfacademy.accounts;
 
 public class Account {
 
-	private int accountNumber;
+	protected int accountNumber;
 
-	private double balance;
+	protected double balance;
 
 	public Account(int accountNumber, double balance) {
 
