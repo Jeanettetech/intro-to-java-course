@@ -1,5 +1,7 @@
 package com.cbfacademy.strings;
 
+import java.text.SimpleDateFormat;
+
 public class App {
     public static void main(String[] args) {
         System.out.println("Hello World!");
@@ -15,7 +17,7 @@ public class App {
     public static Boolean areEqual(String word1, String word2) {
         // TODO: Write code to determine whether the input parameters are equal strings
         // throw new RuntimeException("Not implemented");
-        return word1 == word2;
+        return word1.equals(word2);
     }
 
     public static String format(String item, int quantity, double price) {
@@ -23,8 +25,7 @@ public class App {
         // TODO: Write code to return a string formatted as follows: "Item: [item].
         // Price: £[amount]. Quantity: [quantity]". The date should be formatted as
         // DD/MM/YYYY, e.g. 24/10/2023
-        // throw new RuntimeException("Not implemented");
-        return String.format("Item);
+        return String.format("Item: %s. Price: £%.2f. Quantity: %d", item, price, quantity);
 
     }
 }
