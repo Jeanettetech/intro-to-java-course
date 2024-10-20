@@ -10,8 +10,9 @@ public class FlowControlExercises {
 
     public List<String> fizzBuzz(List<Integer> numbers) {
         // TODO - Implement this method such that
+        // takes a list of integer and returns a list of string
         List<String> result = new ArrayList<String>();
-
+        // enpty lsit called reult to hold the string
         // it creates a list where for each element of the input list ${numbers}
 
         for (int i = 0; i < numbers.size(); i++) {
@@ -32,6 +33,10 @@ public class FlowControlExercises {
     }
 
     public String whichMonth(Integer number) {
+        // TODO - Implement this method such that
+        // - it returns the month corresponding to the input ${number}
+        // - if the ${number} is invalid, the method should return "Invalid month
+        // number"
 
         if (number == null || number < 1 || number > 12) {
             return "Invalid month number";
@@ -40,6 +45,7 @@ public class FlowControlExercises {
         String[] months = {
                 "January", "February", "March", "April", "May", "June",
                 "July", "August", "September", "October", "November", "December"
+
         };
 
         return months[number - 1];
@@ -65,33 +71,21 @@ public class FlowControlExercises {
                 sumOfOdds += number;
             }
         }
+        final int calculatedSumOfEvens = sumOfEvens;
+        final int calculatedSumOfOdds = sumOfOdds;
 
-        // Create a map to store the results
-        Map<String, Integer> result = new HashMap<>();
-        result.put("SumOfEvens", sumOfEvens);
-        result.put("SumOfOdds", sumOfOdds);
-
-        return result;
-    }
-
-    public static void main(String[] args) {
-        NumberSums numsum = new NumberSums();
-        Map<String, Integer> result = numsum.sumOfOddsAndSumOfEvens();
-        System.out.println(result);
-
-        // TODO - Implement this method such that
-        // - creates and initialises a list of 100 numbers - from 1 to 100
-        // - determines the sum of all the even numbers in the list
-        // - determines the sum of all the odd numbers in the list
-        // - returns a map with two entries:
-        // {"SumOfEvens", calculatedSumOfEvens}, {"SumOfOdds", calculatedSumOfOdds}
-        throw new RuntimeException("Not implemented");
+        return new HashMap<String, Integer>() {
+            {
+                put("SumOfEvens", calculatedSumOfEvens);
+                put("SumOfOdds", calculatedSumOfOdds);
+            }
+        };
     }
 
     public List<Integer> reverse(ArrayList<Integer> numbers) {
 
         List<Integer> reversedList = new ArrayList<>(numbers);
-        // Use Collections.reverse to reverse the list
+
         Collections.reverse(reversedList);
         return reversedList;
 
