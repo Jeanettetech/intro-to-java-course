@@ -6,8 +6,8 @@ abstract class Shape {
 
 	abstract double getArea();
 
-	public String getname() {
-		return this.name;
+	public String getName() {
+		return name;
 	}
 
 }

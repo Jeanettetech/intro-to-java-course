@@ -9,6 +9,7 @@ public class Paint {
 	}
 
 	public double getAmount(Shape shape) {
-		return this.coverage;
+		double area = shape.getArea();
+		return area / coverage;
 	}
 }
