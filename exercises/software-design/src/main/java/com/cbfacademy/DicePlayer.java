@@ -1,6 +1,6 @@
 package com.cbfacademy;
 
-public class DicePlayer {
+public class DicePlayer implements Player {
     private String name;
 
     public String getName() {
@@ -13,7 +13,7 @@ public class DicePlayer {
 
     public int roll() {
         int score = (int) (Math.random() * 6) + 1;
-        
+
         System.out.println(name + " rolled a " + score);
 
         return score;
