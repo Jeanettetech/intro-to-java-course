@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+
+</head>
+<body>
+
+<div class="form-container">
+    <form>
+       <label for="email">Email:</label><br />
+<input type="email" id="email" name="email" placeholder="example@gmail.com" /><br /><br />
+
+<label for="password">Password:</label><br />
+<div style="position: relative;">
+    <input type="password" id="password" name="password" placeholder="Enter your password"/>
+    <span onclick="togglePassword()" style="position: absolute; left: 140px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" height="20">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12c1.74-4.5 6.13-7 9-7s7.26 2.5 9 7-3.26 7-9 7-7.26-2.5-9-7z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15c-1.5 0-3-1.5-3-3s1.5-3 3-3 3 1.5 3 3-1.5 3-3 3z" />
+        </svg>
+    </span>
+</div><br /><br />
+
+<div style="display: flex; justify-content: space-between; align-items: center;">
+    <div>
+        <input type="checkbox" id="remember" name="remember" />
+        <label for="remember">Remember me</label>
+    </div>
+    <a href="#" style="text-decoration: none; color: red; margin-right: 450px;">Forgot password?</a>
+</div>
+
+<button style="background-color: blue; color: white; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; width: 25%;">Sign In</button>
+
+<script>
+function togglePassword() {
+    const passwordInput = document.getElementById('password');
+    passwordInput.type = passwordInput.type === 'password' ? 'text' : 'password';
+}
+</script>
+</body>
+</html>
